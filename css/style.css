@@ -13,7 +13,7 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 100px 100px 100px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,10 +75,11 @@ header ul li a {
 
 .content .textBox .title .span {
     color: #3e08ad;
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 900;
-    padding: 30px;
+    padding: 10px;
     padding-left: 0px;
+    align-items: center;
 }
 
 .content .textBox .text {
@@ -88,7 +89,7 @@ header ul li a {
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
-    padding: 8px 20px;
+    padding: 8px 10px;
     background: #3e08ad;
     color: #fff;
     border-radius: 40px;
@@ -175,29 +176,32 @@ header ul li a {
     
     header .logo{
         position: relative;
-        max-width: 60px;
+        max-width: 100px;
+        bottom: 30px;
     }
     
     header ul{
         display: none;
     }
-    
-    .content{
-        padding: 20px 20px 110px;
-    }
+
     
     .content{
         flex-direction: column;
-        margin: 100px;
+        position: relative;
     }
     
     .content .textBox h2{
+        font-size: 2.5rem;
+    }
+
+    .content .textBox span{
         font-size: 2.5rem;
         margin-bottom: 15px;
     }
     
     .content .textBox{
         max-width: 100%;
+        font-size: 20px;
     }
     
     .content .imgBox {
@@ -206,15 +210,17 @@ header ul li a {
     }
     
     .main .imgBox img{
-        max-width: 300px;
+        max-width: 200px;
     }
     
     .thumb li img{
-        max-width: 60px;
+        max-width: 40px;
     }
     
     .circle{
         clip-path: circle(400px at center bottom);
+        width: 100%;
+        height: 100%;
     }
     .sci{
         background-color: #9c7ac8;
