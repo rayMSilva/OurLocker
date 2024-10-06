@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OurLocker</title>
-    <link rel="shortcut icon" href="images/ourlocker/OURLOCKER-_1_-Copy (2).ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +13,7 @@
     <section>
         <div class="circle"></div>
         <header>
-            <a href="index.html"><img src="images/ourlocker/OURLOCKER (1).png" class="logo"></a>
+            <a href="index.html"><img src="images/OURLOCKER (1).png" class="logo"></a>
             <ul>
                 <li><a href="index.html">Menu</a></li>
                 <li><a href="#">Saiba Mais</a></li>
@@ -23,18 +22,23 @@
         </header>
         <div class="content">
             <div class="textBox">
-                <div class="title"><h2>Não é só um Locker é<br><div class="span"><span> OurLocker</span></div></h2></div>
+
+                <div class="title"><h2>Não é só um Locker é<br><span> OurLocker</span></h2></div>
                 <div class="text"><p>O armário que irá solucionar seus problemas com segurança, agilidade, estoque de entregas, facilitando todos os ambientes com profissionalismo e tecnologia.</p></div>
                 <a href="#">Veja mais</a>
+
             </div>
             <div class="imgBox">
-                <img src="images/ourlocker/chave.png" class="OurLocker">
+                <img src="images/chave.png" class="OurLocker">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="images/OURLOCKER (1)-Photoroom.png" onclick="imgSlider('images/ourlocker/chave.png');changeCircleColor('#3e08ad');changeSpan('OurLocker');changetext('O armário que irá solucionar seus problemas com segurança, agilidade, estoque de entregas, facilitando todos os ambientes com profissionalismo e tecnologia.');"></li>
-            <li><img src="images/ourlocker/funcionamento.png" onclick="imgSlider('images/ourlocker/funcionamento.png');changeCircleColor('#eb7495');changeSpan('Praticidade');changetext('facilitamos toda logística de entregas em condominios, empresas, hospitais com todas as tecnologias de ponta, sem deixar que ninguém espere por esse momento');"></li>
-            <li><img src="images/ourlocker/cadeado.png" onclick="imgSlider('images/ourlocker/cadeado.png');changeCircleColor('#333');changeSpan('Segurança', '#333');changetext('Nossa Segurança consiste em um app altamente criptografado e único para cada espaço, com armários de metal e um touchscreen altamente responsivo');"></li>
+            <li><img src="images/OURLOCKER (1)-Photoroom.png" onclick="imgSlider('images/chave.png');changeCircleColor('#3e08ad');changeSpan('OurLocker', '#3e08ad');changetext('O armário que irá solucionar seus problemas com segurança, agilidade, estoque de entregas, facilitando todos os ambientes com profissionalismo e tecnologia.');changeSeeMore('#3e08ad');"></li>
+
+            <li><img src="images/funcionamento.png" onclick="imgSlider('images/funcionamento.png');changeCircleColor('#eb7495');changeSpan('Praticidade', '#eb7495');changetext('facilitamos toda logística de entregas em condominios, empresas, hospitais com todas as tecnologias de ponta, sem deixar que ninguém espere por esse momento');changeSeeMore('#eb7495');"></li>
+
+            <li><img src="images/cadeado.png" onclick="imgSlider('images/cadeado.png');changeCircleColor('#666666');changeSpan('Segurança', '#666666');changetext('Nossa Segurança consiste em um app altamente criptografado e único para cada espaço, com armários de metal e um touchscreen altamente responsivo');changeSeeMore('#666666');"></li>
+
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="images/facebook.png"></a></li>
@@ -44,6 +48,7 @@
     </section>
 
     <script type="text/javascript">
+
         function imgSlider(anything){
             document.querySelector('.OurLocker').src = anything
         }
@@ -54,10 +59,16 @@
         } 
 
         function changeSpan(text, color){
-            const textBox = document.querySelector('.span')
+            const textBox = document.querySelector('.textBox span')
             textBox.textContent = text
-            textBox.color = color
+            textBox.style.color = color
         }
+
+        function changeSeeMore(color){
+            const textBox = document.querySelector('.textBox a')
+            textBox.style.background = color
+        }
+        
         function changetitle(text){
             const textBox = document.querySelector('.title')
             textBox.textContent = text

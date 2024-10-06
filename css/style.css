@@ -73,7 +73,7 @@ header ul li a {
     font-weight: 500;
 }
 
-.content .textBox .title .span {
+.content .textBox .title span {
     color: #3e08ad;
     font-size: 1.0em;
     font-weight: 900;
@@ -84,6 +84,7 @@ header ul li a {
 
 .content .textBox .text {
     color: #333;
+    padding-top: 30px;
 }
 
 .content .textBox a {
@@ -175,6 +176,7 @@ header ul li a {
     }
     
     header .logo{
+        padding-top: 15px;
         position: relative;
         max-width: 100px;
         bottom: 30px;
@@ -186,18 +188,21 @@ header ul li a {
 
     
     .content{
+        padding-top: 30px;
         flex-direction: column;
         position: relative;
     }
     
     
     .content .textBox h2{
-        font-size: 3.0rem;
+        font-size: 2.6rem;
+        line-height: 1em;
     }
 
     .content .textBox span{
         font-size: 3.0rem;
         margin-bottom: 15px;
+        line-height: 1.5em;
     }
     
     .content .textBox{
