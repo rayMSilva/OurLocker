@@ -1,5 +1,0 @@
-fazer
-
-mudar a cor do cinza
-melhorar o favicon do site
-melhorar a caixa de texto para caber mais texto e ficar mais um do lado do outro
